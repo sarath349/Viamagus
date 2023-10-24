@@ -2,6 +2,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import Header from '../../Common/Header';
 import MyCard from '../../Common/MyCard';
+import styles from './MyComponentStyle';
 const Home = () => {
   return (
     <View style={styles.container}>
@@ -12,9 +13,3 @@ const Home = () => {
 };
 
 export default Home;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});

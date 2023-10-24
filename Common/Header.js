@@ -1,13 +1,14 @@
 import {Image, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import Images from '../Assets/Images/Images';
+import {FONT_MEDIUM} from '../Assets/Fonts/Font';
 
 export default function header({title, left, right}) {
   return (
     <View style={styles.headerContainer}>
-      {left && <Image source={Images.left} style={{height: 20, width: 20}} />}
+      {left && <Image source={Images.left} style={{height: 30, width: 30}} />}
       <Text style={styles.title}>{title}</Text>
-      {right && <Image source={Images.right} style={{height: 20, width: 20}} />}
+      {right && <Image source={Images.right} style={{height: 30, width: 30}} />}
     </View>
   );
 }
@@ -23,8 +24,9 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 16,
-    fontWeight: '800',
-    color: '#333333',
+    fontWeight: '500',
+    color: '#727682',
     alignSelf: 'center',
+    fontFamily: FONT_MEDIUM,
   },
 });

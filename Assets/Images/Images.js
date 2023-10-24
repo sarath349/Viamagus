@@ -17,6 +17,7 @@ const Images = {
   vector2: require('./Vector2.png'),
   left: require('./left.png'),
   right: require('./right.png'),
+  yellowCircle: require('./yellow.png'),
 };
 
 export default Images;
