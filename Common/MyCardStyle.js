@@ -88,7 +88,8 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
   underButton: {
-    width: 180,
+    // width: 180,
+    paddingHorizontal: 50,
     backgroundColor: '#452C55',
     height: 40,
     borderRadius: 20,
@@ -97,7 +98,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   overButton: {
-    width: 180,
+    paddingHorizontal: 50,
     backgroundColor: '#6231AD',
     height: 40,
     borderRadius: 20,
@@ -122,14 +123,15 @@ const styles = StyleSheet.create({
   },
   leftBar: {
     height: 15,
-    width: 250,
+    flex: 0.8,
     backgroundColor: '#FE4190',
     borderTopLeftRadius: 10,
     borderBottomLeftRadius: 10,
   },
   rightBar: {
+    flex: 0.2,
     height: 15,
-    width: 110,
+
     backgroundColor: '#2DABAD',
     borderTopRightRadius: 10,
     borderBottomRightRadius: 10,
